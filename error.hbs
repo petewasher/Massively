@@ -1,7 +1,7 @@
 {{!--
 This error template is used for all 400/500 errors, except 404, which might occur on your site.
 It's a good idea to keep this template as minimal as possible in terms of both file size and complexity.
-You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in this file.
+You'll notice that we *don't* use any JavaScript, or ghost_head / ghost_foot in this file.
 --}}
 
 <!DOCTYPE html>
@@ -41,6 +41,8 @@ You'll notice that we *don't* use any JavsScript, or ghost_head / ghost_foot in 
 
                 <section class="error-message">
                     <h1 class="error-code">{{statusCode}}</h1>
+                    <h2>Oh dear.</h2>
+                    <p><i class="fas fa-frown-open"></i></p>
                     <p class="error-description">{{message}}</p>
                     <a class="error-link" href="{{@site.url}}">Go to the front page →</a>
                 </section>
