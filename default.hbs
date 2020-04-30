@@ -27,7 +27,7 @@
 
     <div id="wrapper" {{#is "home"}}class="fade-in"{{/is}}>
 
-        {{!-- Intro --}}
+        {{!-- Intro - home page only --}}
         {{#is "home"}}
         <div id="intro">
             <h1>{{@site.title}}</h1>
@@ -39,6 +39,7 @@
         {{/is}}
 
         {{!-- Header --}}
+        {{#unless "home"}}
         <header id="header">
             {{#if @site.logo}}
                 <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
@@ -46,6 +47,7 @@
                 <a href="{{@site.url}}" class="logo">{{@site.title}}</a>
             {{/if}}
         </header>
+        {{/unless}}
 
         {{!-- Nav --}}
         {{#if @site.navigation}}
