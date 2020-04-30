@@ -36,11 +36,9 @@
                 <li><a href="#header" class="button icon solo fa-arrow-down scrolly">Continue</a></li>
             </ul>
         </div>
-        <header id="header"></header>
         {{/is}}
 
         {{!-- Header --}}
-        {{#unless "home"}}
         <header id="header">
             {{#if @site.logo}}
                 <a href="{{@site.url}}" class="logo image"><img src="{{@site.logo}}" alt="{{@site.title}}" /></a>
@@ -48,7 +46,6 @@
                 <a href="{{@site.url}}" class="logo">{{@site.title}}</a>
             {{/if}}
         </header>
-        {{/unless}}
 
         {{!-- Nav --}}
         {{#if @site.navigation}}
@@ -64,7 +61,6 @@
                 <li>&copy; {{@site.title}}</li>
                 <li>Design by <a href="https://html5up.net">HTML5 UP</a></li>
                 <li>Published with <a href="https://ghost.org">Ghost</a></li>
-                <li>I like bacon sandwiches.</a></li>
             </ul>
         </div>
 
